@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/WhatsApp\ Image\ 2026-01-06\ at\ 10.42.27\ AM.jpeg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 75vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 145px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 52px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 530;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+
+.separation {
+    height: 1px;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    z-index: 20;
+}
+
+.separation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+.btn {
+    padding: 5px 18px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px groove rgb(98, 96, 96);
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 20px;
+    border: 1px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    padding: 5px 15px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px;
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.heroinput {
+    padding: 15px 200px 15px 20px;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first {
+    color: white;
+    margin: 8px 150px 0px 150px;
+    height: 350px;
+}
+
+.Trending {
+    font-size: 22px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.slider {
+    margin: 20px 10px 0px 10px;
+    display: flex;
+    gap: 7px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+    margin: 0px 20px;
+}
+
+.card img {
+    border-radius: 7px;
+    width: 179px;
+    height: 254px;
+}
+
+.number {
+    position: absolute;
+    font-size: 100px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.05rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    bottom: 1px;
+    left: -10px;
+}
+
+.second {
+    color: white;
+    margin: 0px 150px 0px 150px;
+    height: 450px;
+}
+
+.more {
+    font-size: 22px;
+    margin-top: 22px;
+    font-weight: bold;
+}
+
+.slides {
+    display: flex;
+    margin-top: 15px;
+    gap: 17px;
+}
+
+.card2 {
+    background-color: rgba(65, 65, 153, 0.474);
+    border-radius: 15px;
+    width: 250px;
+    height: 290px;
+    padding: 15px;
+    word-wrap: break-word;
+}
+
+.cardH {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.cardp {
+    margin-top: 10px;
+    color: rgb(184, 184, 184);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.faq h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.faq {
+    background: rgb(0, 0, 0);
+    color: white;
+    margin: 0px 150px 0px 150px;
+    height: 600px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 90vw;
+    margin: 8px 0px;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    height: 810px;
+    max-width: 75vw;
+    margin: auto;
+    padding: 60px;
+}
+
+.footer-button {
+    display: flex;
+    gap: 16px;
+}
+
+.ready p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 17px;
+}
+
+.footer-button input {
+    padding: 15px 370px 15px 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.footerbtnred {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 20px;
+    border: 1px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+footer .questions {
+    padding: 54px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footerbtn {
+    margin-top: 60px;
+}
+
+#footerp {
+    margin-top: 30px;
+    font-weight: 200;
+    font-size: smaller;
+    color: #bebebe9d;
+}
+
+#Netflixindia {
+    margin-top: 30px;
+    font-size: small;
+
+    color: #dcdcdc9d;
+}
+
+
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav {
+        max-width: 90vw;
+
+    }
+
+    nav img {
+        width: 90px;
+    }
+
+    .btn {
+        padding: 5px 5px;
+    }
+
+    .main {
+        height: 580px;
+    }
+
+    .main .box {
+        height: 580px;
+    }
+
+    .heroinput {
+        padding: 10px 10px 10px 15px;
+    }
+
+    .hero {
+        line-height: 1.2;
+    }
+
+    .first {
+        flex-wrap: wrap;
+        height: 250px;
+        margin: 8px 20px 0px 20px;
+    }
+
+    .Trending {
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    .slider {
+        margin-top: 20px;
+        gap: 0px;
+    }
+
+    .card {
+        margin: 0px 10px;
+    }
+
+    .card img {
+        width: 110px;
+        height: 160px;
+    }
+
+    .number {
+        font-size: 70px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .second {
+        margin: 0px 30px 0px 30px;
+        height: 900px;
+    }
+
+    .more {
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    .slides {
+        flex-direction: column;
+        gap: 0.05;
+    }
+
+    .card2 {
+        width: 300px;
+        height: 150px;
+    }
+
+    .cardH {
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    .faq h2 {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .faq {
+        margin: 0px 30px 0px 30px;
+        height: 560px;
+    }
+
+    .faqbox {
+        font-size: 17px;
+        width: auto;
+        padding: 21px;
+        font-weight: 200;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-button {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .ready p {
+        font-weight: 200;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .footer-button input {
+        padding: 10px 100px 10px 10px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
